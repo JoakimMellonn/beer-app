@@ -15,12 +15,20 @@ class _BuyPageState extends State<BuyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Buy for ${widget.person.name}'),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(100),
+        child: AppBar(
+          title: Text(
+            'Buy for ${widget.person.name}',
+            style: const TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
+        child: InkWell(
+          onTap: () {
             context.read<DBProvider>().addBeerToPerson(widget.person.name);
             // show snackbar
             ScaffoldMessenger.of(context).showSnackBar(
@@ -31,7 +39,32 @@ class _BuyPageState extends State<BuyPage> {
             );
             Navigator.pop(context);
           },
-          child: const Text('Buy'),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.primary,
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                  spreadRadius: 1,
+                  blurRadius: 1,
+                  offset: const Offset(0, 1),
+                ),
+              ],
+            ),
+            height: 100,
+            width: 250,
+            padding: const EdgeInsets.all(20),
+            child: const Center(
+              child: Text(
+                'Buy',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );

@@ -21,6 +21,10 @@ class _NewPersonPageState extends State<NewPersonPage> {
     }
     final result = await context.read<DBProvider>().addPerson(name);
     if (result == 'Person added') {
+      FocusScopeNode currentFocus = FocusScope.of(context);
+      if (!currentFocus.hasPrimaryFocus) {
+        currentFocus.unfocus();
+      }
       Navigator.pop(context);
     } else {
       // show alert dialog if name already exists
@@ -42,8 +46,16 @@ class _NewPersonPageState extends State<NewPersonPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Add Person'),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(100),
+        child: AppBar(
+          title: const Text(
+            'Add Person',
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -53,6 +65,7 @@ class _NewPersonPageState extends State<NewPersonPage> {
               key: formKey,
               autovalidateMode: AutovalidateMode.onUserInteraction,
               child: TextFormField(
+                autofocus: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Name',
