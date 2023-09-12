@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "286259188695",
+    "project_id": "beerchart-7adb2",
+    "storage_bucket": "beerchart-7adb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286259188695:android:5fe902b02ba07e9f883192",
+        "android_client_info": {
+          "package_name": "com.flutterflow.edriveapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJP0ps2Wvmes15YDtDikzuL67RADKA1UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286259188695:android:8a418eb23a8d0cca883192",
+        "android_client_info": {
+          "package_name": "com.mellonn.beerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJP0ps2Wvmes15YDtDikzuL67RADKA1UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286259188695:android:2fe843ab3366026e883192",
+        "android_client_info": {
+          "package_name": "com.mycompany.beerchart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJP0ps2Wvmes15YDtDikzuL67RADKA1UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
