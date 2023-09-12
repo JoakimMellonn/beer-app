@@ -1,13 +1,12 @@
+// ignore_for_file: avoid_print
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthProvider with ChangeNotifier {
-  UserCredential? _userCredential;
-
   Future signIn() async {
     try {
-      final userCredential = await FirebaseAuth.instance.signInAnonymously();
-      _userCredential = userCredential;
+      await FirebaseAuth.instance.signInAnonymously();
       print("Signed in with temporary account.");
     } on FirebaseAuthException catch (e) {
       switch (e.code) {
