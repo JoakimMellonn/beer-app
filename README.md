@@ -3,6 +3,8 @@ The beer-app is an app for tracking how many beers or drinks of whatever kind a 
 
 For those who just want to use it as is, you can read about how to set it up and export it to a device of your choice below. The app is not on the Play Store or App Store, because it will require you to run your own Firebase back end (this is not that hard), it will also be shown how this is done below.
 
+After setting up this app, you can also use the accompanying [beer-chart](https://github.com/JoakimMellonn/beerchart).
+
 # Table of contents
 - [Prerequisites](#prerequisites)
 - [Set up the app](#set-up-the-app)
