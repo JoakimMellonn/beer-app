@@ -3,6 +3,16 @@ The beer-app is an app for tracking how many beers or drinks of whatever kind a 
 
 For those who just want to use it as is, you can read about how to set it up and export it to a device of your choice below. The app is not on the Play Store or App Store, because it will require you to run your own Firebase back end (this is not that hard), it will also be shown how this is done below.
 
+## Table of contents
+- [Prerequisites](#prerequisites)
+- [Set up the app](#set-up-the-app)
+  - [Clone git repo](#clone-git-repo)
+  - [Set up Firebase](#set-up-firebase)
+  - [Test the app on a device](#test-the-app-on-a-device)
+  - [Build the app to use in "production"](#build-the-app-to-use-in-production)
+- [Reporting an issue](#reporting-an-issue)
+- [Contributing to the project](#contributing-to-the-project)
+
 ## Prerequisites
 These are the things you will need when setting up and running the beer-app.
 
